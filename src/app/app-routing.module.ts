@@ -5,11 +5,14 @@ import { BlogListComponent } from './blog/pages/blog-list/blog-list.component';
 import { BookFormComponent } from './book/pages/book-form/book-form.component';
 
 const routes: Routes = [
+<<<<<<< HEAD
   {
     path: "",
     redirectTo: "blog",
     pathMatch: "full"
   },
+=======
+>>>>>>> b42906bdcb24807824d8ed151e78337ca179426c
   {
     path: "blog",
     loadChildren: () => import("./blog/blog.module").then(m => m.BlogModule)
