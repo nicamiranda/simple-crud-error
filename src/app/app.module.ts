@@ -9,6 +9,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { CommandBarComponent } from './shared/components/command-bar/command-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BookService } from './book/service/book.service';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -17,14 +24,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    MatToolbarModule
+    HttpClientModule,
+    MatToolbarModule,
   ],
-  providers: [],
+  providers: [BookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

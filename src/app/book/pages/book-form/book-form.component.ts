@@ -14,7 +14,7 @@ export class BookFormComponent implements OnInit , AfterViewInit{
   books: Book[] = [];
   
   constructor(private bf: FormBuilder, private bookService: BookService) { 
-    this.books = this.bookService.getBlogDetails();
+    // this.books = this.bookService.getBlogDetails();
 
     this.bookForm = this.bf.group ({
       name: [""],

@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable, tap } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Book } from '../models/book';
 
 @Injectable({
@@ -37,9 +40,11 @@ export class BookService {
     }
   ]
 
-  constructor() { }
+  constructor(private http : HttpClient) { }
 
-  getBlogDetails(){
-    return this.books;
+  getBooks() : Observable<Book[]> {
+    return this.http.get<Book[]>(`${environment.baseurl}/books`).pipe(
+      tap(x => x)
+    );
   }
 }

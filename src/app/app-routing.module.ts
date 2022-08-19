@@ -3,16 +3,24 @@ import { RouterModule, Routes } from '@angular/router';
 import { BlogFormComponent } from './blog/pages/blog-form/blog-form.component';
 import { BlogListComponent } from './blog/pages/blog-list/blog-list.component';
 import { BookFormComponent } from './book/pages/book-form/book-form.component';
+import { LoginComponent } from './login/login/login.component';
+import { RegisterComponent } from './login/register/register.component';
+import { BookResolver } from './resolvers/book.resolver';
 
 const routes: Routes = [
-<<<<<<< HEAD
   {
     path: "",
-    redirectTo: "blog",
+    redirectTo: "login",
     pathMatch: "full"
   },
-=======
->>>>>>> b42906bdcb24807824d8ed151e78337ca179426c
+  {
+    path: "login",
+    component: LoginComponent,
+  },
+  {
+    path: "register",
+    component: RegisterComponent,
+  },
   {
     path: "blog",
     loadChildren: () => import("./blog/blog.module").then(m => m.BlogModule)
@@ -24,6 +32,9 @@ const routes: Routes = [
   {
     path: "book",
     loadChildren: () => import("./book/book.module").then(m => m.BookModule),
+    resolve: {
+      books: BookResolver
+    }
   },
   {
     path: "book/form",

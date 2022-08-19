@@ -1,0 +1,58 @@
+{
+  "books" :  [
+      {
+          "id": 1,
+          "name": "The Twilight Saga",
+          "authors": ["Stephenie Meyer"],
+          "isbn": "0316327336",
+          "img": "https://images-na.ssl-images-amazon.com/images/I/514GTlyo5qL._SY498_BO1,204,203,200_.jpg"
+      },
+      {
+          "id": 2,
+          "name": "A Song of Fire and Ice",
+          "authors": ["George R. R. Martin", " Linda Antonsson", " Elio Garcia"],
+          "isbn": "0553805444",
+          "img": "https://www.booktopia.com.au/blog/wp-content/uploads/2017/01/GOT-books.jpg"
+      },
+      {
+          "id": 3,
+          "name": "The Hunger Games",
+          "authors": ["Suzanne Collins"],
+          "isbn": "054579191X",
+          "img": "http://4.bp.blogspot.com/-pkVYb-OCpig/ULG87dJPyMI/AAAAAAAAAB0/E8WA0XYKJv8/s1600/asasasa.PNG"
+      },
+      {
+          "id": 4,
+          "name": "Harry Potter",
+          "authors": ["J.K. Rowling"],
+          "isbn": " 0545162076",
+          "img": "https://i.ebayimg.com/images/i/261349515319-0-1/s-l1000.jpg"
+      }
+  ],
+
+  "blogs" : [
+      {
+          "id": 1,
+          "title": "Book Riot",
+          "description": "Book Riot is the largest independent editorial book site in North America and home to a host of media, from podcasts to newsletters to original content, all designed around diverse readers and across all genres.",
+          "author": "Riot New Media Group",
+          "comments": ["Always Books"," Never Boring"]
+        },
+        {
+          "id": 2,
+          "title": "The Chrysalis BREW Project",
+          "description": "An Australia-based award-winning platform. This is where you would find thoughts, words, photos, videos, and other ideas in the realm of Books, Reviews, and Everything Written (BREW).",
+          "author": "Susan Frances",
+          "comments": ["Power of the Written Word"," Top Australian and Global book blog"]
+        },
+        {
+          "id": 3,
+          "title": "Amazon Book Review",
+          "description": "The Amazon Book Review, formerly known as Omnivoracious is a large book blog managed by four different editors. It’s updated practically every day with at least two new articles.It is one of the most comprehensive book blog out there",
+          "author": "Amazon",
+          "comments": ["Always hot off the press"," sheer variety"]
+        }
+  ]
+
+
+}

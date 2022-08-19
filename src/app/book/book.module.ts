@@ -20,7 +20,6 @@ import { BookFormComponent } from './pages/book-form/book-form.component';
     BookListComponent,
     BookItemComponent,
     BookFormComponent,
-    // BookFormComponent,
   ],
   imports: [
     CommonModule,
